@@ -4,69 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genealogía Histórica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
     <style>
-        * {
+        /* Estilo global */
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Merriweather', serif;
+            background-image: url('ruta-de-tu-imagen.png'); /* Cambia esto por la ruta correcta */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #f4f4f4; /* Color de texto general */
         }
 
-        body {
-            background: url('https://source.unsplash.com/1600x900/?history,abstract') no-repeat center center fixed;
-            background-size: cover;
+        /* Contenedor principal */
+        .container {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+            padding: 20px;
         }
 
-        .container {
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(10px);
-            border-radius: 15px;
+        /* Tarjeta central */
+        .card {
+            background: rgba(255, 255, 255, 0.85); /* Fondo semitransparente para resaltar el contenido */
             padding: 30px;
-            max-width: 500px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
             text-align: center;
-            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            max-width: 500px;
+            color: #333;
         }
 
-        h1 {
+        /* Título */
+        .title {
             font-size: 24px;
-            color: #fff;
             font-weight: bold;
-            margin-bottom: 15px;
+            color: #3c3c3c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
         }
 
-        p {
-            font-size: 16px;
-            color: #f0f0f0;
-            margin-bottom: 20px;
+        /* Ícono */
+        .title img {
+            width: 24px;
+            height: 24px;
         }
 
+        /* Botón */
         .btn {
             display: inline-block;
-            text-decoration: none;
-            background: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 5px;
+            margin-top: 15px;
+            padding: 12px 20px;
             font-size: 16px;
             font-weight: bold;
-            transition: 0.3s;
+            color: white;
+            background: #3e4e88;
+            border: none;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: background 0.3s;
         }
 
         .btn:hover {
-            background: #45a049;
+            background: #2c3a6e;
         }
+
+        /* Contacto */
+        .contacto {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .contacto a {
+            color: #3e4e88;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contacto a:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 <body>
+
     <div class="container">
-        <h1>📜 Genealogía Histórica</h1>
-        <p>Proyecto de investigación genealógica para mejorar la búsqueda de registros históricos por ciudad y apellido en FamilySearch.</p>
-        <p>Facilitamos la conexión entre registros dispersos, ayudando a las personas a descubrir su historia familiar.</p>
-        <a href="https://github.com/tu-repo" class="btn">Ver en GitHub</a>
+        <div class="card">
+            <div class="title">
+                <img src="icono-documento.png" alt="Ícono">
+                Genealogía Histórica
+            </div>
+            <p>Proyecto de investigación genealógica para mejorar la búsqueda de registros históricos por ciudad y apellido en FamilySearch.</p>
+            <p>Facilitamos la conexión entre registros dispersos, ayudando a las personas a descubrir su historia familiar.</p>
+            <a href="https://github.com/tu-repositorio" class="btn">🔍 Ver en GitHub</a>
+            <p class="contacto">Contacto: <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></p>
+        </div>
     </div>
+
 </body>
 </html>
