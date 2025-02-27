@@ -5,60 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Genealogía Histórica</title>
     <style>
+        /* Fondo sofisticado con efecto visual */
         body {
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
+            background: url('URL_DE_LA_IMAGEN_DE_FONDO') no-repeat center center fixed;
+            background-size: cover;
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #1e3c72, #2a5298);
-            color: white;
         }
-        .container {
+
+        /* Tarjeta de presentación */
+        .card {
             background: rgba(255, 255, 255, 0.9);
-            padding: 20px;
+            padding: 20px 30px;
             border-radius: 12px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
             text-align: center;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
             max-width: 500px;
         }
+
+        /* Título con icono */
         h1 {
-            font-size: 24px;
-            color: #2a5298;
-        }
-        p {
+            font-size: 22px;
             color: #333;
-            font-size: 16px;
-            margin: 10px 0;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
         }
+
+        h1 img {
+            width: 24px;
+            height: 24px;
+        }
+
+        /* Botón con efecto moderno */
         .button {
             display: inline-block;
-            background: #2a5298;
-            color: white;
             padding: 10px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-size: 16px;
-            transition: 0.3s;
-        }
-        .button:hover {
-            background: #1e3c72;
-        }
-        .footer {
-            font-size: 14px;
             margin-top: 15px;
-            color: #666;
+            font-size: 16px;
+            color: white;
+            background: linear-gradient(90deg, #0084ff, #00bcd4);
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: linear-gradient(90deg, #0070e0, #0097a7);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>📜 Genealogía Histórica</h1>
-        <p>Proyecto de investigación genealógica para mejorar la búsqueda de registros históricos por ciudad y apellido en FamilySearch.</p>
+
+    <div class="card">
+        <h1><img src="https://emoji.com/icon.png" alt="icono"> Genealogía Histórica</h1>
+        <p>Proyecto de investigación genealógica para mejorar la búsqueda de registros históricos 
+           por ciudad y apellido en FamilySearch.</p>
         <p>Facilitamos la conexión entre registros dispersos, ayudando a las personas a descubrir su historia familiar.</p>
-        <a href="https://github.com/tu-repositorio" class="button">🔍 Ver en GitHub</a>
-        <p class="footer">Contacto: <a href="mailto:correo@ejemplo.com">correo@ejemplo.com</a></p>
+        <a href="https://github.com/tu-repositorio" class="button">Ver en GitHub</a>
     </div>
+
 </body>
 </html>
