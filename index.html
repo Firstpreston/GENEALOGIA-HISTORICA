@@ -6,50 +6,58 @@
     <title>Genealogía Histórica</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
+            background: url('https://source.unsplash.com/1600x900/?history,abstract') no-repeat center center fixed;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
         .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: white;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+            width: 50%;
+            max-width: 600px;
+            text-align: center;
             padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
         }
         h1 {
-            color: #333;
+            color: #2c3e50;
+            font-size: 24px;
         }
         p {
-            color: #666;
-            font-size: 18px;
+            color: #34495e;
+            font-size: 16px;
+            margin: 10px 0;
         }
-        .btn {
+        .button {
             display: inline-block;
             padding: 10px 20px;
-            margin-top: 20px;
+            margin-top: 15px;
+            font-size: 16px;
+            color: #fff;
+            background: linear-gradient(135deg, #3498db, #2ecc71);
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
             text-decoration: none;
-            background: #007bff;
-            color: white;
-            border-radius: 5px;
-            font-size: 18px;
+            transition: 0.3s;
         }
-        .btn:hover {
-            background: #0056b3;
+        .button:hover {
+            background: linear-gradient(135deg, #2980b9, #27ae60);
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <h1>Genealogía Histórica</h1>
+        <h1>📜 Genealogía Histórica</h1>
         <p>Proyecto de investigación genealógica para mejorar la búsqueda de registros históricos por ciudad y apellido en FamilySearch.</p>
-        <p>Este proyecto tiene como objetivo facilitar la conexión entre registros dispersos, ayudando a las personas a descubrir su historia familiar.</p>
-        <a class="btn" href="https://github.com/firstpreston/genealogia-historica" target="_blank">Ver en GitHub</a>
+        <p>Facilitamos la conexión entre registros dispersos, ayudando a las personas a descubrir su historia familiar.</p>
+        <a href="https://github.com/tu-repo" class="button">Ver en GitHub</a>
     </div>
-
 </body>
 </html>
