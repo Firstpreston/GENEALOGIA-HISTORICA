@@ -12,4 +12,4 @@ y facilitar la conexión entre registros dispersos en FamilySearch.
 
 ## Contacto  
 Si deseas colaborar con este proyecto, contáctame en:  
-📩 frobiano@gmail.com
+📩 jdeveloperstack@gmail.com
